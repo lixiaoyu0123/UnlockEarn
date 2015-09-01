@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:layout_marginTop="@dimen/navi_bar_height"
+                android:background="@color/grey_bg" />
+
+            <LinearLayout
+                android:id="@id/invite_details"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_item_height"
+                android:background="@color/income_sub_item_bg">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/today_awards"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="@dimen/num_nig_text_size" />
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_horizontal"
+                            android:text="今日收益" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/today_awards_rank"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/tab_text_color_focus"
+                            android:textSize="@dimen/num_nig_text_size" />
+
+                        <TextView
+                            android:id="@id/compare_to_tomarow"
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_horizontal"
+                            android:text="比昨日上升" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.unlockEarn.widget.LineChatView
+                android:id="@id/line_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:background="@color/grey_bg" />
+
+            <View style="@style/custom_divider" />
+
+            <LinearLayout
+                style="@style/content_margin_left_right_top"
+                android:layout_height="@dimen/common_item_height"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="左滑收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/unlock_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/full_vertical_divider"
+                    android:layout_width="0.5dip" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="右滑收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/right_slide_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/custom_divider" />
+
+            <LinearLayout
+                style="@style/content_margin_left_right_top"
+                android:layout_height="@dimen/common_item_height"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="下载收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/download_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/full_vertical_divider"
+                    android:layout_width="0.5dip" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="签到收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/sign_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/custom_divider" />
+
+            <LinearLayout
+                style="@style/content_margin_left_right_top"
+                android:layout_height="@dimen/common_item_height"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="活动收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/acvtivity_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/full_vertical_divider"
+                    android:layout_width="0.5dip" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/first_page_inner_title"
+                            android:layout_gravity="center_vertical"
+                            android:text="邀请收益"
+                            android:textSize="@dimen/num_sev_text_size" />
+
+                        <TextView
+                            android:id="@id/inivte_rewards_total"
+                            style="@style/first_page_inner_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2.0dip"
+                            android:textSize="@dimen/num_fif_text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/custom_divider" />
+
+            <Button
+                android:id="@id/make_more_money"
+                style="@style/button_grey_long"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:text="赚更多" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

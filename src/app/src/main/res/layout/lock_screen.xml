@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lockview_bg">
+
+    <com.chinazmob.unlockearn.ui.AdScrollView
+        android:id="@id/ad_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.chinazmob.unlockearn.ui.UnlockView
+        android:id="@id/unlock_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity = "bottom"/>
+
+    <ImageView
+        android:id="@id/iv_up_arrow_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_arrow_dimens"
+        android:src="@drawable/update_arrows_up" />
+
+    <ImageView
+        android:id="@id/iv_down_arrow_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/bottom_arrow_dimens"
+        android:src="@drawable/update_arrows_down" />
+
+    <ImageView
+        android:id="@id/iv_lockview_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@id/btn_guide_hide"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@null" />
+</RelativeLayout>

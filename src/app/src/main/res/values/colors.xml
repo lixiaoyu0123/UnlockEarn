@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="grey">#ff666666</color>
+    <color name="navi_bar_bg">#fff2f2f2</color>
+    <color name="tab_text_color_focus">#ffe63528</color>
+    <color name="tab_text_color_nomal">#ff999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="income_title_bg">#ffe63528</color>
+    <color name="income_sub_item_bg">#fff2f2f2</color>
+    <color name="invite_title_text_color">#ff4c4c4c</color>
+    <color name="bottom_bar_bg">#fff2f2f2</color>
+    <color name="main_button_pressed">#ffc01104</color>
+    <color name="main_red">#ffe63528</color>
+    <color name="main_grey_button_pressed">#ffa1a1a1</color>
+    <color name="main_grey_button">#ffb3b3b3</color>
+    <color name="bg_grey">#fff0f0f0</color>
+    <color name="grey_bg">#fff2f2f2</color>
+</resources>

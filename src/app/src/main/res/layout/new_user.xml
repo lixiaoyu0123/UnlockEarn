@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@id/me_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/first_page_title_height"
+            android:background="@color/income_title_bg">
+
+            <TextView
+                android:id="@id/new_user_recommend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/income_page_magin_left"
+                android:layout_marginTop="@dimen/first_page_cur_margin_top"
+                android:text="@string/new_user_welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_fif_text_size" />
+
+            <LinearLayout
+                android:id="@id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/firstpage_crrent_rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/num_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/income_page_title_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp"
+                android:layout_centerHorizontal="true"
+                android:text="完成新手活动，奖励现金"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/new_user_finish_userinfo"
+                style="@style/item_relative_layout"
+                android:layout_width="fill_parent">
+
+                <TextView
+                    style="@style/first_page_inner_text"
+                    android:layout_alignParentLeft="true"
+                    android:text="完善信息+0.3元" />
+
+                <ImageView
+                    android:id="@id/a"
+                    style="@style/first_page_inner_arrow"
+                    android:layout_marginRight="10.0dip" />
+
+                <ImageView
+                    android:id="@id/new_user_finish_userinfo_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/a"
+                    android:background="@drawable/icon_item_notice_bubble" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                android:id="@id/new_user_bond_phone"
+                style="@style/item_relative_layout">
+
+                <TextView
+                    style="@style/first_page_inner_text"
+                    android:layout_alignParentLeft="true"
+                    android:text="绑定手机号+1元" />
+
+                <ImageView
+                    android:id="@id/a1"
+                    style="@style/first_page_inner_arrow"
+                    android:layout_marginRight="10.0dip" />
+
+                <ImageView
+                    android:id="@id/new_user_bond_phone_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/a1"
+                    android:background="@drawable/icon_item_notice_bubble" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                android:id="@id/new_user_input_recommend"
+                style="@style/item_relative_layout">
+
+                <TextView
+                    style="@style/first_page_inner_text"
+                    android:layout_alignParentLeft="true"
+                    android:text="填写邀请码+1元" />
+
+                <ImageView
+                    android:id="@id/a2"
+                    style="@style/first_page_inner_arrow"
+                    android:layout_marginRight="10.0dip" />
+
+                <ImageView
+                    android:id="@id/new_user_input_recommend_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/a2"
+                    android:background="@drawable/icon_item_notice_bubble" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                android:id="@id/new_user_view_hsp"
+                style="@style/item_relative_layout"
+                android:layout_width="fill_parent">
+
+                <TextView
+                    style="@style/first_page_inner_text"
+                    android:layout_alignParentLeft="true"
+                    android:text="了解惠锁屏+0.1元" />
+
+                <ImageView
+                    android:id="@id/a3"
+                    style="@style/first_page_inner_arrow"
+                    android:layout_marginRight="10.0dip" />
+
+                <ImageView
+                    android:id="@id/new_user_view_hsp_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/a3"
+                    android:background="@drawable/icon_item_notice_bubble" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/content_magin_top"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@id/jump_to_firstpage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/new_user_jump"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="4.0dip"
+            android:background="#ffd1d1d1" />
+
+        <RelativeLayout
+            android:id="@id/jump_to_login"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/new_user_count_login"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@id/new_user_bottom_divider"
+        style="@style/custom_divider"
+        android:layout_above="@id/bottom" />
+</RelativeLayout>

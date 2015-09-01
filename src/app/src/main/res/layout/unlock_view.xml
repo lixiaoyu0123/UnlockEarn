@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ffffff">
+
+    <ImageView
+        android:id="@id/link_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40.0dip"
+        android:src="@drawable/lock_left_share_icon_normal" />
+
+    <ImageView
+        android:id="@id/link_conflict_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40.0dip"
+        android:src="@drawable/lock_touched"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@id/link_slip_credit"
+        android:layout_width="55.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/link_view"
+        android:layout_marginLeft="40.0dip"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@id/key_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40.0dip"
+        android:src="@drawable/lock_right_icon_normal" />
+
+    <ImageView
+        android:id="@id/key_conflict_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40.0dip"
+        android:src="@drawable/lock_touched"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@id/key_slip_credit"
+        android:layout_width="55.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/key_view"
+        android:layout_marginRight="40.0dip"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:textStyle="bold" />
+</RelativeLayout>

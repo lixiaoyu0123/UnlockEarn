@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/radio_group"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottom_tab_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/navi_bar_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@id/tool_bar_first_bg"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_weight="1.0">
+
+        <RadioButton
+            android:id="@id/radio_first"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/tool_bar_first"
+            android:text="@string/tool_bar_first" />
+
+        <TextView
+            android:id="@id/radio_first_noti"
+            style="@style/main_tab_notice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tool_bar_second_bg"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_weight="1.0">
+
+        <RadioButton
+            android:id="@id/radio_second"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tool_bar_second"
+            android:text="@string/tool_bar_charge" />
+
+        <TextView
+            android:id="@id/radio_second_noti"
+            style="@style/main_tab_notice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tool_bar_third_bg"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_weight="1.0">
+
+        <RadioButton
+            android:id="@id/radio_third"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tool_bar_third"
+            android:text="@string/tool_bar_invite" />
+
+        <TextView
+            android:id="@id/radio_third_noti"
+            style="@style/main_tab_notice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tool_bar_fourth_bg"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_weight="1.0">
+
+        <RadioButton
+            android:id="@id/radio_fourth"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tool_bar_fourth"
+            android:text="@string/tool_bar_more" />
+
+        <TextView
+            android:id="@id/radio_fourth_noti"
+            style="@style/main_tab_notice" />
+    </RelativeLayout>
+</RadioGroup>

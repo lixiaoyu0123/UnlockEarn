@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_title_size">16.0dip</dimen>
+    <dimen name="first_page_title_height">142.0dip</dimen>
+    <dimen name="num_fif_text_size">12.0sp</dimen>
+    <dimen name="income_page_magin_left">12.0dip</dimen>
+    <dimen name="first_page_cur_margin_top">13.0dip</dimen>
+    <dimen name="first_page_text_margin">45.0dip</dimen>
+    <dimen name="num_two_text_size">27.0sp</dimen>
+    <dimen name="income_page_title_text_size">54.0sp</dimen>
+    <dimen name="first_page_secondery_height">75.0dip</dimen>
+    <dimen name="common_vertical_divider_height">34.0dip</dimen>
+    <dimen name="common_vertical_divider_margintop">21.0dip</dimen>
+    <dimen name="num_six_text_size">7.0sp</dimen>
+    <dimen name="num_fur_text_size">10.0sp</dimen>
+    <dimen name="navi_bar_back_btn_width">10.0dip</dimen>
+    <dimen name="num_thr_text_size">15.0sp</dimen>
+    <dimen name="navi_bar_back_btn_height">18.0dip</dimen>
+    <dimen name="navi_bar_button_padding">4.0dip</dimen>
+    <dimen name="navi_bar_horizontal_margin">16.0dip</dimen>
+    <dimen name="num_nig_text_size">13.0sp</dimen>
+    <dimen name="top_arrow_dimens">40dp</dimen>
+    <dimen name="bottom_arrow_dimens">40dp</dimen>
+    <dimen name="lock_screen_bottom_height">160.0dip</dimen>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/bottom_tab_height"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@id/me_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/first_page_title_height"
+            android:background="@color/income_title_bg">
+
+            <TextView
+                android:id="@id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/income_page_magin_left"
+                android:layout_marginTop="@dimen/first_page_cur_margin_top"
+                android:text="您的当前收益"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_fif_text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/income_page_magin_left"
+                android:layout_marginTop="@dimen/first_page_text_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/num_two_text_size" />
+
+                <TextView
+                    android:id="@id/firstpage_crrent_rewards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/income_page_title_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/first_page_secondery_height"
+            android:background="@color/income_sub_item_bg">
+
+            <RelativeLayout
+                android:id="@id/firstpage_yes_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@id/temp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/firstpage_yestoday_rewards"
+                        style="@style/first_page_inner_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/num_two_text_size" />
+
+                    <TextView
+                        style="@style/first_page_inner_title"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/yestoday_income" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/first_page_vertical_divider_one" />
+
+            <RelativeLayout
+                android:id="@id/firstpage_increase_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/first_page_padding_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/firstpage_total_rewards"
+                        style="@style/first_page_inner_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/num_two_text_size" />
+
+                    <TextView
+                        style="@style/first_page_inner_title"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/total_rewards" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/custom_divider"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@id/first_framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@id/firstpage_include"
+            layout="@layout/firstpage_layout1" />
+
+        <GridView
+            android:id="@id/first_grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/invite_title_text_color"
+            android:gravity="center"
+            android:horizontalSpacing="0.5dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.5dip"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

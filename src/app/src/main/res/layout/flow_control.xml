@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/new_setting_scroll_view">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/flow_control_rl_switch"
+            style="@style/new_setting_relative_layout_item">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/turn_on_intel_mode" />
+
+            <CheckBox
+                android:id="@id/intelligence_checkbox"
+                style="@style/new_setting_my_switch"
+                android:layout_marginRight="15.0dip"
+                android:checked="true"
+                android:onClick="switchIntelMode" />
+        </RelativeLayout>
+
+        <View
+            style="@style/custom_divider"
+            android:layout_below="@id/flow_control_rl_switch" />
+
+        <TextView
+            style="@style/new_setting_grey_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flow_control_rl_switch"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:singleLine="false"
+            android:text="@string/flow_control_statement"
+            android:textColor="@color/tab_text_color_nomal"
+            android:textSize="11.0sp" />
+    </RelativeLayout>
+</ScrollView>

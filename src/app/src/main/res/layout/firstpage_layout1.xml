@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/arrow_one"
+        android:layout_width="fill_parent"
+        android:layout_height="96.0dip"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@id/download_sign"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/sign_icon"
+                android:text="待激活收益"
+                android:textSize="@dimen/num_six_text_size" />
+
+            <ImageView
+                android:id="@id/first_page_new_user_sign_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/first_page_noti"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View style="@style/first_page_vertical_divider_two" />
+
+        <RelativeLayout
+            android:id="@id/new_user_pay"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/new_user_icon"
+                android:text="新手活动"
+                android:textSize="@dimen/num_six_text_size" />
+
+            <ImageView
+                android:id="@id/first_page_new_user_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/first_page_noti" />
+        </RelativeLayout>
+
+        <View style="@style/first_page_vertical_divider_two" />
+
+        <RelativeLayout
+            android:id="@id/income_details"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/item_view_chart"
+                android:text="收益明细"
+                android:textSize="@dimen/num_six_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/custom_divider"
+        android:background="@color/income_sub_item_bg" />
+
+    <LinearLayout
+        android:id="@id/arrow_two"
+        android:layout_width="fill_parent"
+        android:layout_height="96.0dip"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@id/buy_succ"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/item_view_bag"
+                android:text="成功兑换"
+                android:textSize="@dimen/num_six_text_size" />
+
+            <View
+                style="@style/custom_divider"
+                android:layout_alignParentBottom="true"
+                android:background="@color/income_sub_item_bg" />
+        </RelativeLayout>
+
+        <View style="@style/first_page_vertical_divider_two" />
+
+        <RelativeLayout
+            android:id="@id/inform_notice"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style">
+
+            <TextView
+                style="@style/first_page_inner_text"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/icon_item_boardcasting"
+                android:text="公告"
+                android:textSize="@dimen/num_six_text_size" />
+
+            <ImageView
+                android:id="@id/first_page_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/first_page_noti" />
+
+            <View
+                style="@style/custom_divider"
+                android:layout_alignParentBottom="true"
+                android:background="@color/income_sub_item_bg" />
+        </RelativeLayout>
+
+        <View style="@style/first_page_vertical_divider_two" />
+
+        <RelativeLayout
+            android:id="@id/inform_notice_"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/common_item_press_style" />
+    </LinearLayout>
+</LinearLayout>

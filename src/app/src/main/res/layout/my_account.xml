@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/new_setting_scroll_view">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@id/my_account_rl_public_info"
+            style="@style/new_setting_linear_layout_list">
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goNicknameSetting">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/nickname" />
+
+                <ImageView
+                    android:id="@id/my_account_img_nickname_right_arrow"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_current_nickname"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/my_account_img_nickname_right_arrow"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goManageAddress">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/manage_delivery_address" />
+
+                <ImageView style="@style/new_setting_img_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@id/tempa"
+            style="@style/new_setting_short_divider_width"
+            android:layout_below="@id/my_account_rl_public_info"
+            android:layout_marginTop="45.0dip" />
+
+        <LinearLayout
+            android:id="@id/my_account_rl_private_info"
+            style="@style/new_setting_linear_layout_list"
+            android:layout_below="@id/tempa"
+            android:layout_marginTop="1.1999817dip">
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goBoundPhone">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/telephone_no" />
+
+                <ImageView
+                    android:id="@id/my_account_img_telephone_right_arrow"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_current_telephone"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/my_account_img_telephone_right_arrow"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                android:id="@id/recommend_layout"
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goRecommendationCode">
+
+                <TextView
+                    android:id="@id/temp2"
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/recommendation_code" />
+
+                <ImageView
+                    android:id="@id/recommend_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/temp2"
+                    android:background="@drawable/icon_item_notice_bubble" />
+
+                <ImageView
+                    android:id="@id/my_account_img_recommendation_right_arrow"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_current_code"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/my_account_img_recommendation_right_arrow"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View
+                android:id="@id/recom_below_line"
+                style="@style/custom_divider" />
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goGenderSetting">
+
+                <TextView
+                    android:id="@id/temp"
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/gender" />
+
+                <ImageView
+                    android:id="@id/gender_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/temp"
+                    android:background="@drawable/icon_item_notice_bubble" />
+
+                <ImageView
+                    android:id="@id/my_account_img_gender_right_arrow"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_gender"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/my_account_img_gender_right_arrow"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goBirthday">
+
+                <TextView
+                    android:id="@id/temp1"
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/birthday" />
+
+                <ImageView
+                    android:id="@id/birthday_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/temp1"
+                    android:background="@drawable/icon_item_notice_bubble" />
+
+                <ImageView
+                    android:id="@id/my_account_img_birthday_right_arrow"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_birthday"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/my_account_img_birthday_right_arrow"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View
+                style="@style/new_setting_short_divider_width"
+                android:layout_marginTop="45.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/_temp"
+            style="@style/new_setting_linear_layout_list"
+            android:layout_below="@id/my_account_rl_private_info">
+
+            <RelativeLayout
+                android:id="@id/setting_user_state"
+                style="@style/new_setting_relative_layout_item">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/setting_uesr_state" />
+
+                <ImageView
+                    android:id="@id/temp_"
+                    style="@style/new_setting_img_arrow" />
+
+                <TextView
+                    android:id="@id/my_account_state"
+                    style="@style/new_setting_grey_right_note"
+                    android:layout_toLeftOf="@id/temp_"
+                    android:text="@string/tmp_version" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goModifyPassword">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/modify_password" />
+
+                <ImageView style="@style/new_setting_img_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+
+            <RelativeLayout
+                style="@style/new_setting_relative_layout_item"
+                android:onClick="goLogout">
+
+                <TextView
+                    style="@style/new_setting_grey_text"
+                    android:text="@string/quit_login" />
+
+                <ImageView style="@style/new_setting_img_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/custom_divider" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/info_usbmit"
+            style="@style/button_red_long"
+            android:layout_below="@id/_temp"
+            android:text="提交"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_height">60.0dip</dimen>
+    <dimen name="num_eig_text_size">10.0sp</dimen>
+    <dimen name="common_line_space">3.0dip</dimen>
+</resources>

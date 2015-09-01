@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_height">60.0dip</dimen>
+    <dimen name="num_eig_text_size">6.0sp</dimen>
+    <dimen name="first_page_padding_left">20.0dip</dimen>
+    <dimen name="content_magin_top">48.0dip</dimen>
+    <dimen name="invite_page_title_height">82.0dip</dimen>
+    <dimen name="invite_page_perday_magin_top">11.0dip</dimen>
+    <dimen name="num_sev_text_size">7.0sp</dimen>
+    <dimen name="common_long_btn_height">38.0dip</dimen>
+    <dimen name="common_item_height">33.0dip</dimen>
+    <dimen name="navi_bar_height">48.0dip</dimen>
+    <dimen name="setting_item_height">32.0dip</dimen>
+</resources>

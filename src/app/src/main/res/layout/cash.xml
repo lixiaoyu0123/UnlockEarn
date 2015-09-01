@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/bottom_tab_height">
+    <include
+        layout="@layout/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_magin_top"
+        android:id="@id/cash_head"></include>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/content_magin_top"
+        android:background="@color/income_sub_item_bg">
+
+        <RadioGroup
+            android:id="@id/radio_group"
+            style="@style/custom_block"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@id/ll_cash_fun"
+                style="@style/sub_tab_item_tab"
+                android:gravity="center"
+                android:text="@string/mall_center_virtue" />
+
+            <RadioButton
+                android:id="@id/ll_cash_good"
+                style="@style/sub_tab_item_tab"
+                android:gravity="center"
+                android:text="@string/mall_center_goods" />
+
+            <RadioButton
+                android:id="@id/ll_cash_recharge"
+                style="@style/sub_tab_item_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0.0dip"
+                android:text="@string/mall_center_pay" />
+        </RadioGroup>
+
+        <View
+            style="@style/custom_divider"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@id/cursor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="7.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/income_title_bg" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/shop_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

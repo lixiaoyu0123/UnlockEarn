@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey"
+    android:paddingTop="@dimen/navi_bar_height">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="140.0dip"
+            android:background="@color/bg_grey">
+
+            <ImageView
+                android:id="@id/temp"
+                android:layout_width="120.0dip"
+                android:layout_height="82.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/about_hui_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/creative_into_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/creative_intr"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View style="@style/about_page_divider" />
+
+        <RelativeLayout
+            android:id="@id/function_into_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/function_intr"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View style="@style/about_page_divider" />
+
+        <RelativeLayout
+            android:id="@id/contact_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height"
+            android:onClick="goMyDownload">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/contact_kefu"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View style="@style/about_page_divider" />
+
+        <RelativeLayout
+            android:id="@id/feedback_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height"
+            android:onClick="goMyDownload">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/suggestion_feedback"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <View style="@style/about_page_divider" />
+
+        <RelativeLayout
+            android:id="@id/check_update_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height"
+            android:onClick="goMyDownload">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/check_update"
+                android:textSize="@dimen/num_fif_text_size" />
+
+            <ImageView
+                android:id="@id/setting_img_update_right_arrow"
+                style="@style/new_setting_img_arrow"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@id/setting_current_version"
+                style="@style/new_setting_grey_right_note"
+                android:layout_toLeftOf="@id/setting_img_update_right_arrow"
+                android:text="@string/tmp_version" />
+        </RelativeLayout>
+
+        <View style="@style/about_page_divider" />
+
+        <RelativeLayout
+            android:id="@id/macket_contacts_relative"
+            style="@style/new_setting_relative_layout_item"
+            android:layout_height="@dimen/setting_item_height"
+            android:onClick="goMyDownload">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/market_contact"
+                android:textSize="@dimen/num_fif_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/about_text_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:lineSpacingExtra="@dimen/common_line_space"
+            android:textColor="@color/tab_text_color_nomal"
+            android:textSize="@dimen/num_sev_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/about_text_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:lineSpacingExtra="@dimen/common_line_space"
+            android:textColor="@color/tab_text_color_nomal"
+            android:textSize="@dimen/num_sev_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="合作热线：021-60960226"
+            android:textColor="@color/tab_text_color_nomal"
+            android:textSize="@dimen/num_sev_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="官网： www.huisuoping.com"
+            android:textColor="@color/tab_text_color_nomal"
+            android:textSize="@dimen/num_sev_text_size" />
+    </LinearLayout>
+</RelativeLayout>

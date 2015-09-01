@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_item_press_style"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".StartActivity">
+
+    <include
+        layout="@layout/income"
+        android:id="@id/income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <include
+        layout="@layout/cash"
+        android:id="@id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></include>
+
+    <include
+        layout="@layout/invite"
+        android:id="@id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></include>
+
+    <include
+        layout="@layout/setting"
+        android:id="@id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></include>
+
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></include>
+
+</RelativeLayout>

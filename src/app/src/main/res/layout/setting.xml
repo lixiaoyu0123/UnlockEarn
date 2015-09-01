@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_magin_top"
+            android:id="@id/setting_head"></include>
+        <RelativeLayout
+            android:id="@id/setting_rl_lock"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goLockSetting">
+
+            <TextView
+                android:id="@id/setting_tv_lock"
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_unlock"
+                android:text="@string/lock_setting" />
+
+            <ImageView style="@style/new_setting_img_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_account"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goMyAccount">
+
+            <TextView
+                android:id="@id/setting_tv_my_account"
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_user"
+                android:text="@string/my_account" />
+
+            <ImageView
+                android:id="@id/a"
+                style="@style/new_setting_img_arrow" />
+
+            <ImageView
+                android:id="@id/setting_account_new_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/a"
+                android:background="@drawable/icon_item_notice_bubble" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_download"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goMyDownload">
+
+            <TextView
+                android:id="@id/setting_tv_my_download"
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_download"
+                android:text="@string/my_download" />
+
+            <ImageView
+                android:id="@id/abcd"
+                style="@style/new_setting_img_arrow" />
+
+            <ImageView
+                android:id="@id/setting_download_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@id/abcd"
+                android:background="@drawable/icon_item_notice_bubble"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_flow_control"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goFlowControl">
+
+            <TextView
+                android:id="@id/setting_tv_flow_control"
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_networkcontrol"
+                android:text="@string/flow_control" />
+
+            <ImageView style="@style/new_setting_img_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_feedback"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goFeedback"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_feedback"
+                android:text="@string/suggestion_feedback" />
+
+            <ImageView style="@style/new_setting_img_arrow" />
+        </RelativeLayout>
+
+        <View
+            style="@style/custom_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_check_update"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goCheckUpdate"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_updatecheck"
+                android:text="@string/check_update" />
+
+            <ImageView
+                android:id="@id/setting_img_update_right_arrow"
+                style="@style/new_setting_img_arrow" />
+
+            <TextView
+                android:id="@id/setting_current_version"
+                style="@style/new_setting_grey_right_note"
+                android:layout_toLeftOf="@id/setting_img_update_right_arrow"
+                android:text="@string/tmp_version" />
+        </RelativeLayout>
+
+        <View
+            style="@style/custom_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@id/setting_rl_about_huaqian"
+            style="@style/new_setting_relative_layout_item"
+            android:onClick="goAboutMe">
+
+            <TextView
+                android:id="@id/setting_tv_about_huaqian"
+                style="@style/new_setting_grey_text"
+                android:drawableLeft="@drawable/item_view_about"
+                android:text="@string/about_unlock_earn" />
+
+            <ImageView style="@style/new_setting_img_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/new_setting_scroll_view">
+
+    <LinearLayout style="@style/new_setting_linear_layout_list">
+
+        <RelativeLayout style="@style/new_setting_relative_layout_item">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/turn_on_unlock_surface" />
+
+            <CheckBox
+                android:id="@id/new_setting_lock_switch"
+                style="@style/new_setting_my_switch"
+                android:layout_marginRight="15.0dip"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+
+        <RelativeLayout style="@style/new_setting_relative_layout_item">
+
+            <TextView
+                style="@style/new_setting_grey_text"
+                android:text="@string/turn_on_message_notification" />
+
+            <CheckBox
+                android:id="@id/new_setting_noti_switch"
+                style="@style/new_setting_my_switch"
+                android:layout_marginRight="15.0dip"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <View style="@style/custom_divider" />
+    </LinearLayout>
+</ScrollView>
